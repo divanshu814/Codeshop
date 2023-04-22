@@ -29,7 +29,7 @@ const Checkout = ({cart,subTotal,addToCart,removeFromCart,clearCart}) => {
       setEmail(myuser.email)
       fetchData(myuser.token)
     }
-// user is still not working correctly, the jwt sign is not working either
+
   },[])
   const fetchData=async(token)=>{
     let data={token: token}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sorry = () => {
   return (
-    <div>Sorry</div>
+    <div>This service is not available yet.</div>
   )
 }
 
