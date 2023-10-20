@@ -34,7 +34,7 @@ const Navbar = ({logout,user,cart,subTotal, addToCart, removeFromCart, clearCart
 
   return (
     <div className='shadow-md sticky top-0 z-10 '>
-      <header className="text-gray-400 bg-gray-900 body-font">
+      <header className="text-gray-100 bg-gray-900 body-font">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <Link href={'/'} legacyBehavior>
 
