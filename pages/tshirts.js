@@ -54,11 +54,14 @@ const Tshirts = ({products}) => {
 }
 
 export async function getServerSideProps(context){
+  console.log('<<<<<',mongoose.connections[0])
   if(!mongoose.connections[0].readyState){
-    await mongoose.connect(process.env.MONGO_URI)
+  const check=  await mongoose.connect(process.env.MONGO_URI)
+  
 }
 
   let products = await Product.find({category:'tshirt'})
+  console.log(products)
   let tshirts={}
     for(let item of products){
         if(item.title in tshirts){

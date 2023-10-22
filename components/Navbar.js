@@ -42,14 +42,17 @@ const Navbar = ({logout,user,cart,subTotal, addToCart, removeFromCart, clearCart
       <img src="logo-modified.ico" alt="logo" className="w-[60px] " />
    
       
-      <span className="ml-3 text-xl">CodeShop</span>
+      <span className="ml-3 text-xl">Reena Jewellers</span>
     </a>
     </Link>
     <nav className="cursor-pointer md:ml-auto md:mr-auto flex flex-wrap items-center font-bold text-base justify-center">
       <Link href={'/tshirts'} className="mr-5 hover:text-white">Tshirts</Link>
       <Link href={'/hoodies'} className="mr-5 hover:text-white">Hoodies</Link>
-      <Link href={'/details'} className="mr-5 hover:text-white">More </Link>
-      <Link href={'/'} className="mr-5 hover:text-white">About </Link>
+      <Link href={'/details'} className="mr-5 hover:text-white">New Collections </Link>
+      <Link href={'/details'} className="mr-5 hover:text-white">Necklaces </Link>
+      <Link href={'/details'} className="mr-5 hover:text-white">Earrings </Link>
+      <Link href={'/'} className="mr-5 hover:text-white">Rings </Link>
+      <Link href={'/details'} className="mr-5 hover:text-white">Bracelets </Link>
     </nav>
    <div className="cart absolute right-0 mx-4 md:mx-8 top-8 flex">
     <button onClick={toggleCart}> 
